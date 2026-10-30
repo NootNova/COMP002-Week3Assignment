@@ -27,7 +27,7 @@ if (inputOne < inputOne) {
 function calculateCircumference(radius) {
 
     return 2 * 3.14 * radius;
-    
+
 };
 
 
@@ -36,3 +36,32 @@ function calculateCircumference(radius) {
 // console.log(searchString(“s”, “mississippi”)); // will output 4
 // console.log(searchString(“q”, “mississippi”)); // will output 0
 
+function searchString(searchValue, input) {
+
+    //setting the count to 0 as a let to be able to add to it for the final console log.
+
+    let searchCount = 0;
+
+    for(
+
+        //setting the search var to go through the string adding a value to continue till the end of the string.
+
+        let i = 0;
+        
+        i < input.length;
+
+        i++
+
+    ) { //every letter in the string is getting checked for equality to the search value and adding to the count if its equal.
+
+        if (input[i] === searchValue) {
+
+            searchCount++;
+
+        }
+
+    } //after the whole string has been check the total amount of equals will have been counted and will return to the console log.
+
+    return searchCount;
+
+};
