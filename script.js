@@ -60,7 +60,7 @@ function searchString(searchValue, input) {
 
         }
 
-    } //after the whole string has been check the total amount of equals will have been counted and will return to the console log.
+    } //after the whole string has been checked, the total amount of equals will have been counted and will return to the console log.
 
     return searchCount;
 
